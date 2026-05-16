@@ -1,0 +1,102 @@
+.card {
+    margin: 15px;
+    width: 650px;
+    height: 320px;
+    display: flex;
+    background-color: #3c3e44;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-dot.Alive {
+    background-color: #55cc44;
+}
+
+.status-dot.Dead {
+    background-color: #d63d2e;
+}
+
+.status-dot.unknown {
+    background-color: #9e9e9e;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 220px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.card-content p {
+    margin: 8px 0;
+    color: #d1d1d1;
+}
+
+.card a {
+    margin-top: 15px;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #2bb74e;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+
+    .card {
+
+        width: 100%;
+    }
+
+    .card img {
+
+        height: 300px;
+    }
+}

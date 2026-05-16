@@ -1,0 +1,106 @@
+.detail-container {
+    color: white;
+    width: 680px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    background-color: #5c5d62;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.detail-container img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.detail-info {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.detail-info h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 42px;
+    margin: 0;
+    color: white;
+}
+
+.detail-info p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    font-size: 22px;
+    color: #d1d1d1;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.status-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.status-dot.Alive {
+    background-color: #55cc44;
+}
+
+.status-dot.Dead {
+    background-color: #d63d2e;
+}
+
+.status-dot.unknown {
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+
+    .detail-container {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .detail-container img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .detail-info {
+        padding: 25px;
+    }
+
+    .detail-info h1 {
+        font-size: 32px;
+    }
+
+    .detail-info p {
+        font-size: 18px;
+    }
+}
